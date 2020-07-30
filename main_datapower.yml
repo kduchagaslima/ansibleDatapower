@@ -3,7 +3,7 @@
   connection: local
   hosts: localhost
   vars:
-    domain_name: TESTE-ANSIBLE2
+    domain_name: TESTE-ANSIBLE3
     summary: Made with Ansible!!!
     origin: default
   
