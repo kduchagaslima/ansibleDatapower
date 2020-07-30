@@ -7,3 +7,10 @@
       overwrite_objects: True
       input_file: "{{ export_out['file'] }}"
   register: import_out
+
+- name: Save domain
+  idg_domain_config:
+      name: "{{ domain_name }}"
+      idg_connection: "{{ remote_idg }}"
+      state: saved
+  register: save_out 
