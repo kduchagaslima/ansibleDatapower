@@ -14,4 +14,4 @@
         file: connection/idg-connection.yml
         name: remote_idg  
 
-  - include: tasks/remove.yml        
+  - include: tasks/create.yml        
