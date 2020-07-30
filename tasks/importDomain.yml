@@ -1,0 +1,9 @@
+- name: Import domain
+  idg_domain_config:
+      name: "{{ domain_name }}"
+      idg_connection: "{{ remote_idg }}"
+      state: imported
+      overwrite_files: True
+      overwrite_objects: True
+      input_file: "{{ export_out['file'] }}"
+  register: import_out

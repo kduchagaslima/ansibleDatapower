@@ -15,3 +15,5 @@
         name: remote_idg  
 
   - include: tasks/create.yml        
+  - include: tasks/exportDomain.yml        
+  - include: tasks/importDomain.yml        
