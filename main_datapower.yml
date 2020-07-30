@@ -1,0 +1,17 @@
+---
+- name: Test DataPower domain module (export)
+  connection: local
+  hosts: localhost
+  vars:
+    domain_name: TESTE-ANSIBLE2
+    summary: Made with Ansible!!!
+    origin: default
+  
+  tasks:
+  
+  - name: Include connection data
+    include_vars:
+        file: connection/idg-connection.yml
+        name: remote_idg  
+
+  - include: tasks/remove.yml        

@@ -1,0 +1,9 @@
+- name: Export domain
+  idg_domain_config:
+      name: "{{ origin }}"
+      idg_connection: "{{ remote_idg }}"
+      state: exported
+      all_files: True
+      persisted: True
+      user_summary: "{{ summary }}"
+  register: export_out

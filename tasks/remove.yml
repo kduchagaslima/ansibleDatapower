@@ -1,0 +1,6 @@
+- name: Remove domain
+  idg_domain:
+      name: "{{ domain_name }}"
+      idg_connection: "{{ remote_idg }}"
+      state: absent
+  register: remove_domain_out
