@@ -5,4 +5,4 @@
   tasks:
 
   - name: Copiando arquivos para o DATAPOWER utilizando o módulo dp-file-uploader
-    command: dp-file-uploader -u "{{userdatapower}}" -p "{{passdatapower}}" dxdt01 "local:///TESTE-ANSIBLE/" /tmp/testeTowerAWX.txt
+    command: dp-file-uploader -u "{{ userdatapower }}" -p "{{ passdatapower }}" "{{ LIMIT }}" "local:///TESTE-ANSIBLE/" /tmp/testeTowerAWX.txt
