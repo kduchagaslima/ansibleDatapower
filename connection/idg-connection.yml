@@ -1,19 +1,7 @@
 ---
-
-#server: dxdt01 # IDG IP or host name
-#server_port: 2000
-#user: admin
-#password: Rtgl4ccee
-#user: ansible
-#password: ansible$$01
-#validate_certs: false
-#timeout: 15
-
-server: 169.254.0.35 # IDG IP or host name
+server: "{{ LIMIT }}" # IDG IP or host name
 server_port: 5554
-user: admin
-password: admin
-#user: ansible
-#password: ansible$$01
+user: "{{ userdatapower }}"
+password: "{{ passdatapower }}"
 validate_certs: false
 timeout: 15
