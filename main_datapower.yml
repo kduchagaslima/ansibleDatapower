@@ -3,7 +3,7 @@
   connection: local
   hosts: localhost
   vars:
-    domain_name: TESTE-ANSIBLE3
+    domain_name: TESTE-ANSIBLE10
     summary: Made with Ansible!!!
     origin: default
   
@@ -12,8 +12,8 @@
   - name: Include connection data
     include_vars:
         file: connection/idg-connection.yml
-        name: remote_idg  
+        name: remote_idg
 
-  - include: tasks/create.yml        
-  - include: tasks/exportDomain.yml        
-  - include: tasks/importDomain.yml        
+  - include: tasks/create.yml  
+  - include: tasks/exportDomain.yml       
+  - include: tasks/importDomain.yml

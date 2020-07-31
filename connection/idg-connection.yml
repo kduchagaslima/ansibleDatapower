@@ -4,8 +4,8 @@
 #server_port: 2000
 #user: admin
 #password: Rtgl4ccee
-##user: ansible
-##password: ansible$$01
+#user: ansible
+#password: ansible$$01
 #validate_certs: false
 #timeout: 15
 
